@@ -7,115 +7,188 @@
 <meta name="description" content="DigiSonic Media is a digital marketing studio founded by Nikhil Bhagwat. SEO, social, paid ads, content and branding built to grow your business.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔊</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Figtree:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F7F6FF;--surface:#fff;--ink:#14123F;--muted:#5B5980;--line:#DAD7F5;--blue:#2A1BFF;--pink:#FF4D8D;--lilac:#E7E3FF;--acc:#2A1BFF}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E0D2B;--surface:#181647;--ink:#F1EFFF;--muted:#A9A6D6;--line:#2E2B70;--lilac:#23206B;--acc:#FF4D8D}}
-:root[data-theme="dark"]{--bg:#0E0D2B;--surface:#181647;--ink:#F1EFFF;--muted:#A9A6D6;--line:#2E2B70;--lilac:#23206B;--acc:#FF4D8D}
+:root{--bg:#fff;--surface:#fff;--ink:#16161D;--muted:#4D4D5C;--bd:#16161D;--y:#FFD62E;--c:#FF5A3C;--m:#3DDC97;--s:#8FD3FF;--k:#16161D}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#16161D;--surface:#22222C;--ink:#fff;--muted:#B8B8C8;--bd:#F2F2F2}}
+:root[data-theme="dark"]{--bg:#16161D;--surface:#22222C;--ink:#fff;--muted:#B8B8C8;--bd:#F2F2F2}
 html{scroll-padding-top:76px;scroll-behavior:smooth}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 'DM Sans',system-ui,sans-serif}
-h1,h2,h3{font-family:'Bricolage Grotesque','DM Sans',sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 'Figtree',system-ui,sans-serif}
+h1,h2,h3{font-family:'Unbounded','Figtree',sans-serif;line-height:1.1;margin:0;letter-spacing:-.03em;font-weight:700}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+:focus-visible{outline:3px solid var(--c);outline-offset:3px}
 .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
-nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;gap:20px;height:64px}
-.logo{font:800 22px 'Bricolage Grotesque',sans-serif;text-decoration:none;display:flex;align-items:center;gap:8px;margin-right:auto}
-.logo i{display:inline-flex;gap:2px;align-items:center;height:22px}
-.logo i b{width:4px;border-radius:2px;background:var(--pink);animation:eq 1s infinite ease-in-out}
-.logo i b:nth-child(1){height:8px}.logo i b:nth-child(2){height:20px;animation-delay:.2s;background:var(--blue)}.logo i b:nth-child(3){height:13px;animation-delay:.4s}
+nav{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:3px solid var(--bd)}
+nav .wrap{display:flex;align-items:center;gap:20px;height:66px}
+.logo{font:700 20px 'Unbounded',sans-serif;text-decoration:none;display:flex;align-items:center;gap:10px;margin-right:auto}
+.logo i{display:inline-flex;gap:2px;align-items:center;height:22px;background:var(--y);border:2px solid var(--k);border-radius:8px;padding:0 6px}
+.logo i b{width:3px;border-radius:2px;background:var(--k);animation:eq 1s infinite ease-in-out}
+.logo i b:nth-child(1){height:8px}.logo i b:nth-child(2){height:16px;animation-delay:.2s}.logo i b:nth-child(3){height:11px;animation-delay:.4s}
 @keyframes eq{50%{transform:scaleY(.4)}}
-nav a.l{text-decoration:none;font-weight:500;font-size:15px;color:var(--muted)}nav a.l:hover{color:var(--ink)}
+nav a.l{text-decoration:none;font-weight:700;font-size:15px}nav a.l:hover{text-decoration:underline;text-decoration-thickness:3px;text-decoration-color:var(--c)}
 button{font:inherit;cursor:pointer}
-.btn{background:var(--pink);color:#fff;border:0;border-radius:999px;padding:13px 26px;font-weight:700;text-decoration:none;display:inline-block;transition:transform .15s}
-.btn:hover{transform:translateY(-2px)}.btn:disabled{opacity:.6;cursor:wait}
-.btn.ghost{background:transparent;border:2px solid #fff;color:#fff}
-.tg{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;width:38px;height:38px}
+.btn{background:var(--c);color:var(--k);border:3px solid var(--k);border-radius:14px;padding:12px 24px;font-weight:800;text-decoration:none;display:inline-block;box-shadow:4px 4px 0 var(--k);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--k)}.btn:disabled{opacity:.6;cursor:wait}
+.btn.ghost{background:#fff}
+.tg{background:var(--surface);border:3px solid var(--bd);color:var(--ink);border-radius:12px;width:42px;height:42px}
 @media(max-width:860px){nav a.l{display:none}}
-.hero{background:var(--blue);color:#fff;position:relative;overflow:hidden}
+.hero{background:var(--y);color:var(--k);position:relative;overflow:hidden;border-bottom:3px solid var(--bd)}
 .hero canvas{position:absolute;inset:0;width:100%;height:100%}
-.hero .wrap{position:relative;padding-top:84px;padding-bottom:64px;pointer-events:none}
+.hero .wrap{position:relative;padding-top:80px;padding-bottom:64px;pointer-events:none}
 .hero .wrap>*{pointer-events:auto}
-.hero h1{font-size:clamp(42px,7.6vw,98px);font-weight:800;max-width:13ch}
-.hero p{max-width:50ch;font-size:19px;margin:22px 0 28px;color:#E2E0FF}
-.cta{display:flex;gap:14px;flex-wrap:wrap}
-.trust{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:30px;font-size:15px;color:#E2E0FF;list-style:none;padding:0}
-.trust li::before{content:"✓ ";color:#fff;font-weight:700}
-.tune{display:flex;align-items:center;gap:14px;margin-top:26px;font-size:15px;color:#E2E0FF;flex-wrap:wrap}
+.hero h1{font-size:clamp(36px,6.6vw,84px);max-width:14ch}
+.hero p{max-width:50ch;font-size:19px;margin:22px 0 28px;font-weight:500}
+.cta{display:flex;gap:16px;flex-wrap:wrap}
+.trust{display:flex;gap:10px 14px;flex-wrap:wrap;margin-top:30px;font-size:15px;font-weight:700;list-style:none;padding:0}
+.trust li{background:#fff;border:2px solid var(--k);border-radius:999px;padding:4px 14px}
+.trust li::before{content:"✓ ";color:var(--c)}
+.tune{display:flex;align-items:center;gap:14px;margin-top:26px;font-size:15px;font-weight:700;flex-wrap:wrap}
 .tune input{width:min(260px,60vw)}
-input[type=range]{accent-color:var(--pink)}
+input[type=range]{accent-color:var(--c)}
 section{padding:88px 0}
-h2{font-size:clamp(32px,5vw,56px);font-weight:800;max-width:18ch}
+h2{font-size:clamp(28px,4.4vw,48px);max-width:18ch}
 .sub{color:var(--muted);max-width:54ch;margin:14px 0 36px}
-.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 @media(max-width:800px){.vs,.roi,.panel,.steps,.about .grid{grid-template-columns:1fr!important}}
-.vs>div{border-radius:24px;padding:30px;border:1px solid var(--line);background:var(--surface)}
-.vs h3{font-size:26px;margin-bottom:14px}
+.vs>div,.panel,.card,.out,.pg div{border:3px solid var(--bd);border-radius:22px;box-shadow:6px 6px 0 var(--bd)}
+.vs>div{padding:30px;background:var(--surface)}
+.vs h3{font-size:22px;margin-bottom:14px}
 .vs ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
-.vs .no li::before{content:"✕  ";color:var(--muted)}
-.vs .yes{background:var(--blue);color:#fff;border-color:var(--blue)}
-.vs .yes li::before{content:"✓  ";font-weight:700}
-.tabs,.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
-.tab{border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:9px 18px;font-weight:500}
-.tab[aria-selected=true]{background:var(--blue);border-color:var(--blue);color:#fff}
-.panel{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:34px}
-.panel h3{font-size:32px;margin-bottom:10px}
+.vs .no li::before{content:"✕  ";color:var(--c);font-weight:800}
+.vs .yes{background:var(--y);color:var(--k)}
+.vs .yes li::before{content:"✓  ";font-weight:800}
+.tabs,.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.tab{border:3px solid var(--bd);background:var(--surface);color:var(--ink);border-radius:12px;padding:8px 18px;font-weight:700}
+.tab[aria-selected=true]{background:var(--c);border-color:var(--k);color:var(--k);box-shadow:3px 3px 0 var(--bd)}
+.panel{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;background:var(--surface);padding:34px}
+.panel h3{font-size:26px;margin-bottom:10px}
 .panel ul{padding-left:20px;color:var(--muted)}
-.bars{display:flex;align-items:flex-end;gap:12px;height:210px;border-bottom:2px solid var(--line);padding:0 6px}
-.bars div{flex:1;background:linear-gradient(var(--pink),var(--blue));border-radius:8px 8px 0 0;height:0;transition:height .8s cubic-bezier(.2,.8,.2,1);position:relative}
-.bars span{position:absolute;top:-22px;left:0;right:0;text-align:center;font-size:12px;color:var(--muted)}
+.bars{display:flex;align-items:flex-end;gap:12px;height:210px;border-bottom:3px solid var(--bd);padding:0 6px}
+.bars div{flex:1;background:var(--m);border:3px solid var(--k);border-bottom:0;border-radius:8px 8px 0 0;height:0;transition:height .8s cubic-bezier(.2,.8,.2,1);position:relative}
+.bars span{position:absolute;top:-24px;left:0;right:0;text-align:center;font-size:12px;font-weight:700;color:var(--muted)}
 .cap{font-size:13px;color:var(--muted);margin-top:8px}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;border-top:3px solid var(--pink)}
-.steps div{padding:26px 22px 0 0}
-.steps div::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;margin:-45px 0 16px}
-.steps h3{font-size:22px;margin-bottom:6px}.steps p{margin:0;color:var(--muted);font-size:15px}
-.roi{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
-.field{margin-bottom:22px}.field label{display:flex;justify-content:space-between;font-weight:500;margin-bottom:6px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;border-top:4px solid var(--bd)}
+.steps div{padding:30px 22px 0 0}
+.steps div::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--y);color:var(--k);border:3px solid var(--k);font:700 18px 'Unbounded',sans-serif;margin:-54px 0 16px}
+.steps h3{font-size:20px;margin-bottom:6px}.steps p{margin:0;color:var(--muted);font-size:15px}
+.roi{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.field{margin-bottom:22px}.field label{display:flex;justify-content:space-between;font-weight:700;margin-bottom:6px}
 .field input[type=range]{width:100%}
-select,input[type=text],input[type=email],textarea{width:100%;font:inherit;padding:12px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
-.out{background:var(--ink);color:var(--bg);border-radius:24px;padding:32px}
-.out small{opacity:.75;display:block}
-.out .big{font:800 clamp(38px,6vw,60px)/1 'Bricolage Grotesque',sans-serif;margin:4px 0 18px;color:var(--pink)}
-.out a{margin-top:6px}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px;cursor:pointer;text-align:left;color:var(--ink);transition:transform .2s,border-color .2s}
-.card:hover{transform:translateY(-4px);border-color:var(--pink)}
-.card h3{font-size:22px;margin:10px 0 8px}.card p{margin:0;color:var(--muted);font-size:15px}
-.tag{font-size:13px;font-weight:700;color:var(--acc);background:var(--lilac);border-radius:999px;padding:3px 12px;display:inline-block}
-.card .more{display:none;margin-top:12px;font-size:15px}.card[aria-expanded=true] .more{display:block}
-.promise{background:var(--ink);color:var(--bg)}
-.promise h2{max-width:20ch}.promise .sub{color:inherit;opacity:.8}
-.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-.pg div{border:1px solid color-mix(in srgb,var(--bg) 25%,transparent);border-radius:20px;padding:24px}
-.pg h3{font-size:22px;margin-bottom:8px;color:var(--pink)}.pg p{margin:0;font-size:15px;opacity:.85}
-details{border-bottom:1px solid var(--line);padding:18px 0;max-width:760px}
-summary{font:700 19px 'Bricolage Grotesque',sans-serif;cursor:pointer}
+select,input[type=text],input[type=email],textarea{width:100%;font:inherit;padding:12px 14px;border-radius:12px;border:3px solid var(--bd);background:var(--surface);color:var(--ink)}
+.out{background:var(--k);color:#fff;padding:32px;box-shadow:6px 6px 0 var(--c);border-color:var(--k)}
+.out small{opacity:.8;display:block}
+.out .big{font:700 clamp(34px,5vw,52px)/1 'Unbounded',sans-serif;margin:6px 0 20px;color:var(--y)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
+.card{background:var(--surface);padding:24px;cursor:pointer;text-align:left;color:var(--ink);transition:transform .12s,box-shadow .12s}
+.card:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--bd)}
+.card h3{font-size:18px;margin:12px 0 8px}.card p{margin:0;color:var(--muted);font-size:15px}
+.tag{font-size:13px;font-weight:800;background:var(--y);color:var(--k);border:2px solid var(--k);border-radius:8px;padding:2px 10px;display:inline-block}
+.card .more{display:none;margin-top:12px;font-size:15px;font-weight:500}.card[aria-expanded=true] .more{display:block}
+.promise{background:var(--m);color:var(--k);border-block:3px solid var(--bd)}
+.promise .sub{color:var(--k)}
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}
+.pg div{background:#fff;padding:24px;border-color:var(--k);box-shadow:6px 6px 0 var(--k)}
+.pg h3{font-size:18px;margin-bottom:8px}.pg p{margin:0;font-size:15px}
+details{border-bottom:3px solid var(--bd);padding:18px 0;max-width:760px}
+summary{font:700 18px 'Unbounded',sans-serif;cursor:pointer}
 details p{color:var(--muted);margin:10px 0 0}
-.about{background:var(--lilac)}
+.about{background:var(--s);color:var(--k);border-block:3px solid var(--bd)}
+.about .sub{color:var(--k)}
 .about .grid{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center}
-.avatar{width:150px;height:150px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font:800 52px 'Bricolage Grotesque',sans-serif;border:6px solid var(--pink)}
-.facts{display:flex;gap:34px;flex-wrap:wrap;margin-top:22px}
-.facts b{display:block;font:800 40px 'Bricolage Grotesque',sans-serif;color:var(--acc)}
-.cwrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.avatar{width:150px;height:150px;border-radius:28px;background:var(--y);color:var(--k);display:grid;place-items:center;font:700 44px 'Unbounded',sans-serif;border:3px solid var(--k);box-shadow:6px 6px 0 var(--k)}
+.facts{display:flex;gap:34px;flex-wrap:wrap;margin-top:22px;font-weight:700}
+.facts b{display:block;font:700 38px 'Unbounded',sans-serif}
+.cwrap{display:grid;grid-template-columns:1fr 1fr;gap:44px}
 @media(max-width:800px){.cwrap{grid-template-columns:1fr}}
 form{display:grid;gap:14px}
-.err{color:var(--pink);font-size:14px;min-height:18px}
+.err{color:var(--c);font-size:14px;font-weight:700;min-height:18px}
 .next{list-style:none;padding:0;display:grid;gap:14px;color:var(--muted)}
 .next b{color:var(--ink)}
-footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:14px}
-#sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--blue);color:#fff;padding:12px 22px calc(12px + env(safe-area-inset-bottom,0px));display:flex;gap:14px;align-items:center;justify-content:center;transform:translateY(110%);transition:transform .4s}
-#sticky.on{transform:none}
-#sticky span{font-weight:500}
-#toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translate(-50%,200px);background:var(--ink);color:var(--bg);padding:14px 22px;border-radius:14px;transition:transform .4s;z-index:50;max-width:90vw}
+footer{border-top:3px solid var(--bd);padding:30px 0;color:var(--muted);font-size:14px}
+#sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--k);color:#fff;padding:12px 22px calc(12px + env(safe-area-inset-bottom,0px));display:flex;gap:14px;align-items:center;justify-content:center;transform:translateY(110%);transition:transform .4s}
+#sticky.on{transform:none}#sticky span{font-weight:700}
+#toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translate(-50%,200px);background:var(--y);color:var(--k);border:3px solid var(--k);font-weight:700;padding:14px 22px;border-radius:14px;transition:transform .4s;z-index:50;max-width:90vw}
 #toast.show{transform:translate(-50%,0)}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+#pg{position:fixed;top:0;left:0;height:5px;width:0;background:var(--c);z-index:60}
+.rot{background:var(--k);color:var(--y);padding:0 .2em;border-radius:12px;display:inline-block;transition:transform .25s,opacity .25s}
+.rot.sw{transform:translateY(-40%);opacity:0}
+.mq{background:var(--k);color:var(--y);overflow:hidden;border-bottom:3px solid var(--bd);white-space:nowrap}
+.mq div{display:inline-flex;animation:mq 26s linear infinite}
+.mq:hover div{animation-play-state:paused}
+.mq span{font:700 18px 'Unbounded',sans-serif;padding:14px 28px}
+.mq span::after{content:"✦";margin-left:56px;color:var(--c)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+.card,.vs>div,.pg div{will-change:transform}
+#gres h3{font-size:26px;margin-bottom:8px}#gres p{margin:0 0 18px;color:var(--muted)}
+
+.sl{display:none}.sl.on{display:block;animation:fi .5s}
+@keyframes fi{from{opacity:0;transform:translateY(14px)}}
+.ctl{display:flex;align-items:center;gap:12px;margin-top:30px}
+.ctl button{width:44px;height:44px;border-radius:12px;border:3px solid var(--k);background:#fff;color:var(--k);font-weight:800;box-shadow:3px 3px 0 var(--k)}
+.dots{display:flex;gap:8px;margin-left:8px}
+.dots button{width:14px;height:14px;padding:0;border-radius:50%;box-shadow:none;background:transparent}
+.dots button[aria-current=true]{background:var(--k)}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.feat div{border:3px solid var(--bd);border-radius:22px;padding:28px;background:var(--surface);box-shadow:6px 6px 0 var(--bd)}
+.feat i{display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:var(--y);color:var(--k);border:3px solid var(--k);font-style:normal;font-size:24px;margin-bottom:16px}
+.feat h3{font-size:19px;margin-bottom:8px}.feat p{margin:0;color:var(--muted);font-size:15px}
+.cnt{background:var(--k);color:#fff;padding:54px 0;border-block:3px solid var(--bd)}
+.cnt .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.cnt b{display:block;font:700 clamp(32px,5vw,56px)/1.1 'Unbounded',sans-serif;color:var(--y)}
+.cnt span{font-weight:700}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.sk{margin-bottom:20px}.skh{display:flex;justify-content:space-between;font-weight:800;margin-bottom:6px}
+.trk{height:22px;border:3px solid var(--bd);border-radius:12px;background:var(--surface);overflow:hidden}
+.trk i{display:block;height:100%;width:0;background:var(--c);border-right:3px solid var(--k);transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.band{background:var(--c);color:var(--k);padding:64px 0;border-block:3px solid var(--bd)}
+.band .wrap{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.band h2{max-width:22ch}
+.band .btn{background:#fff}
+.tm{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center}
+.ft{background:var(--k);color:#fff;padding:60px 0 30px}
+.ft .g{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.ft h3{font-size:16px;margin-bottom:14px;color:var(--y)}
+.ft a{display:block;text-decoration:none;opacity:.85;margin-bottom:8px}.ft a:hover{opacity:1;text-decoration:underline}
+.ft p{opacity:.85;margin:0 0 12px}
+.nl{display:flex;gap:8px}.nl input{flex:1;min-width:0;padding:11px 14px;border-radius:12px;border:3px solid #fff;background:transparent;color:#fff;font:inherit}
+.nl input::placeholder{color:#C9C9D6}
+.nl button{padding:10px 18px;box-shadow:none}
+.cp{border-top:2px solid #3a3a48;margin-top:36px;padding-top:20px;font-size:14px;opacity:.8}
+.mq.t{background:var(--surface);color:var(--ink)}.mq.t span::after{color:var(--c)}
+@media(max-width:800px){.feat,.two,.ft .g,.tm{grid-template-columns:1fr}.cnt .wrap{grid-template-columns:1fr 1fr}}
+
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:90}
+#ring{position:fixed;left:0;top:0;width:38px;height:38px;margin:-19px 0 0 -19px;border:2px solid #fff;border-radius:50%;mix-blend-mode:difference;pointer-events:none;z-index:95;transition:width .2s,height .2s,margin .2s,background .2s,opacity .2s;opacity:0}
+#ring.on{width:64px;height:64px;margin:-32px 0 0 -32px;background:#fff}
+.btn,.tab{position:relative;overflow:hidden}
+.rp{position:absolute;border-radius:50%;background:rgba(255,255,255,.7);transform:scale(0);animation:rp .6s ease-out forwards;pointer-events:none}
+@keyframes rp{to{transform:scale(1);opacity:0}}
+.card,.feat>div{background-image:radial-gradient(260px circle at var(--mx,-999px) var(--my,-999px),rgba(255,214,46,.4),transparent 60%)}
+#pop{position:fixed;inset:0;z-index:100;background:rgba(22,22,29,.6);display:none;place-items:center;padding:20px}
+#pop.on{display:grid}
+#pop .m{background:var(--y);color:var(--k);border:3px solid var(--k);border-radius:24px;box-shadow:8px 8px 0 var(--k);padding:34px;max-width:440px;width:100%;position:relative;animation:pp .5s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pp{from{transform:scale(.6) rotate(-4deg);opacity:0}}
+#pop h3{font-size:26px;margin-bottom:10px}#pop p{margin:0 0 18px;font-weight:500}
+#pop .x{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:10px;border:3px solid var(--k);background:#fff;color:var(--k);font-weight:800}
+#pop input{width:100%;margin-bottom:6px;padding:12px 14px;border-radius:12px;border:3px solid var(--k);font:inherit;background:#fff;color:var(--k)}
+#pop .err{color:#B3200A}
+@media(hover:none){#ring{display:none}}
 </style>
 </head>
 <body>
+<canvas id="fx" aria-hidden="true"></canvas><div id="ring" aria-hidden="true"></div>
+<div id="pop" role="dialog" aria-modal="true" aria-labelledby="pt"><div class="m"><button class="x" id="px" aria-label="Close">✕</button>
+<h3 id="pt">Before you go: get your free growth plan</h3><p>Leave your email and we’ll send a one-page plan for your business.</p>
+<form id="pf" novalidate><input type="email" id="pe" placeholder="Your email" aria-label="Your email"><div class="err" id="pee"></div><button class="btn" type="submit" style="background:#fff;margin-top:6px">Send me the plan</button></form></div></div>
+<div id="pg"></div>
 <nav><div class="wrap">
 <a class="logo" href="#top" aria-label="DigiSonic Media home"><i aria-hidden="true"><b></b><b></b><b></b></i>DigiSonic</a>
-<a class="l" href="#why">Why us</a><a class="l" href="#services">Services</a><a class="l" href="#process">Process</a><a class="l" href="#roi">Calculator</a><a class="l" href="#faq">FAQ</a>
+<a class="l" href="#top">Home</a><a class="l" href="#about">About</a><a class="l" href="#services">Services</a><a class="l" href="#playbooks">Playbooks</a><a class="l" href="#insights">Insights</a><a class="l" href="#contact">Contact</a>
 <button class="tg" id="theme" aria-label="Switch colour theme">◐</button>
 <a class="btn" href="#contact">Get free plan</a>
 </div></nav>
@@ -123,27 +196,65 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 <header class="hero" id="top">
 <canvas id="wave" aria-hidden="true"></canvas>
 <div class="wrap">
-<h1>Take your business to the next level.</h1>
-<p>DigiSonic Media builds marketing that brings the right customers to you: found on search, followed on social, and converted by campaigns that report every rupee.</p>
-<div class="cta"><a class="btn" href="#contact">Get my free growth plan</a><a class="btn ghost" href="#roi">See what growth could look like</a></div>
+<div class="sl on"><h1>Take your business to <span class="rot" id="rot">the next level</span>.</h1>
+<p>DigiSonic Media is a digital marketing studio that brings the right customers to you through search, social, ads and content.</p>
+<div class="cta"><a class="btn" href="#contact">Get my free growth plan</a><a class="btn ghost" href="#goal">Find your plan</a></div></div>
+<div class="sl"><h1>Marketing you can measure.</h1>
+<p>Every report shows leads, customers and cost per customer, not just likes and impressions.</p>
+<div class="cta"><a class="btn" href="#services">Explore services</a><a class="btn ghost" href="#process">See how we work</a></div></div>
+<div class="sl"><h1>No lock-in. You own it all.</h1>
+<p>We work month to month, and every ad account and dataset stays in your name from day one.</p>
+<div class="cta"><a class="btn" href="#contact">Start a project</a><a class="btn ghost" href="#faq">Read the FAQ</a></div></div>
 <ul class="trust"><li>Free 30-minute strategy call</li><li>Plain-English monthly reports</li><li>No lock-in contracts</li></ul>
-<div class="tune"><label for="freq">Tune the signal</label><input id="freq" type="range" min="1" max="10" value="4"><span id="fv">Reach level 4</span></div>
+<div class="ctl"><button id="prev" aria-label="Previous slide">‹</button><button id="next" aria-label="Next slide">›</button><div class="dots" id="dots"></div>
+</div>
 </div>
 </header>
+<div class="mq" aria-hidden="true"><div><span>SEO</span><span>Social media</span><span>Paid ads</span><span>Content</span><span>Branding</span><span>Web design</span><span>SEO</span><span>Social media</span><span>Paid ads</span><span>Content</span><span>Branding</span><span>Web design</span></div></div>
 
-<section id="why"><div class="wrap">
-<h2>Stop paying for noise.</h2>
-<p class="sub">Most businesses spend on marketing that looks busy but can’t show what it earns. We work the other way round.</p>
-<div class="vs">
-<div class="no"><h3>Typical agency</h3><ul><li>Posts on every platform, hopes something sticks</li><li>Reports on likes and impressions</li><li>Locks you into long contracts</li><li>Keeps accounts and data in its own name</li></ul></div>
-<div class="yes"><h3>DigiSonic</h3><ul><li>Picks the 1 to 2 channels your buyers actually use</li><li>Reports on leads, customers and cost per customer</li><li>Works month to month, so we earn every renewal</li><li>Puts every account and dataset in your name</li></ul></div>
+<section id="about"><div class="wrap">
+<h2>Welcome to DigiSonic.</h2>
+<p class="sub">A new studio with a simple idea: cut the noise, pick the channels that matter and show the numbers.</p>
+<div class="feat">
+<div><i>✎</i><h3>Clear strategy</h3><p>A one-page plan with goals, channels and budget before we spend a rupee.</p></div>
+<div><i>⚡</i><h3>Fast launch</h3><p>Campaigns, content and tracking go live within your first 30 days.</p></div>
+<div><i>◎</i><h3>Honest reporting</h3><p>A short monthly report on leads, cost and what we’ll do next.</p></div>
+</div></div></section>
+
+<div class="cnt"><div class="wrap">
+<div><b data-n="2026">2026</b><span>Year founded</span></div>
+<div><b data-n="5">0</b><span>Core channels</span></div>
+<div><b data-n="30">0</b><span>Days to launch</span></div>
+<div><b data-n="24">0</b><span>Hours to reply</span></div>
+</div></div>
+
+<section id="why"><div class="wrap two">
+<div>
+<h2>Why choose us.</h2>
+<p class="sub">Most agencies post everywhere and report on likes. We pick one or two channels your buyers use and report on customers. You also own every account and can leave any month.</p>
+<a class="btn" href="#contact">Talk to us</a>
+</div>
+<div id="skills">
+<p class="cap" style="margin:0 0 14px;font-size:14px">Where effort typically goes in a first-quarter plan (sample split)</p>
+<div class="sk"><div class="skh"><span>Paid ads</span><b>35%</b></div><div class="trk"><i data-w="35"></i></div></div>
+<div class="sk"><div class="skh"><span>SEO</span><b>25%</b></div><div class="trk"><i data-w="25"></i></div></div>
+<div class="sk"><div class="skh"><span>Content</span><b>20%</b></div><div class="trk"><i data-w="20"></i></div></div>
+<div class="sk"><div class="skh"><span>Social</span><b>15%</b></div><div class="trk"><i data-w="15"></i></div></div>
+<div class="sk"><div class="skh"><span>Branding</span><b>5%</b></div><div class="trk"><i data-w="5"></i></div></div>
 </div></div></section>
 
 <section id="services" style="padding-top:0"><div class="wrap">
-<h2>Five channels. One sound.</h2>
+<h2>Our services.</h2>
 <p class="sub">Pick a channel to see what we build and the lift we aim for. Charts show sample 6-month targets, not guarantees.</p>
 <div class="tabs" role="tablist" id="tabs"></div>
 <div class="panel" id="panel" role="tabpanel"></div>
+</div></section>
+
+<section id="goal" style="padding-top:0"><div class="wrap">
+<h2>What do you want most?</h2>
+<p class="sub">Pick your biggest goal and we’ll show the plan we’d start with.</p>
+<div class="tabs" id="goals"></div>
+<div class="panel" id="gres" aria-live="polite" style="grid-template-columns:1fr"></div>
 </div></section>
 
 <section id="process" style="padding-top:0"><div class="wrap">
@@ -156,24 +267,6 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 <div><h3>Scale</h3><p>We double down on what wins and cut what doesn’t, every week.</p></div>
 </div></div></section>
 
-<section id="roi" style="padding-top:0"><div class="wrap">
-<h2>Estimate your growth.</h2>
-<p class="sub">Move the sliders for a rough projection based on typical industry ranges. It’s a conversation starter, not a promise.</p>
-<div class="roi">
-<div>
-<div class="field"><label for="budget">Monthly budget <output id="bv"></output></label><input id="budget" type="range" min="20000" max="500000" step="5000" value="100000"></div>
-<div class="field"><label for="ch">Main channel</label><select id="ch"></select></div>
-<div class="field"><label for="val">Value of one customer <output id="vv"></output></label><input id="val" type="range" min="1000" max="100000" step="1000" value="15000"></div>
-</div>
-<div class="out" aria-live="polite">
-<small>Projected leads per month</small><div class="big" id="leads">0</div>
-<small>Projected new customers per month</small><div class="big" id="cust">0</div>
-<small>Projected revenue for every ₹1 spent</small><div class="big" id="roix">0</div>
-<a class="btn" href="#contact" id="roicta">Make this plan real</a>
-</div>
-</div>
-</div></section>
-
 <section id="playbooks" style="padding-top:0"><div class="wrap">
 <h2>Playbooks we run.</h2>
 <p class="sub">Start from a proven plan, then we tailor it. Filter by goal and tap a card.</p>
@@ -181,35 +274,37 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 <div class="cards" id="cards"></div>
 </div></section>
 
-<section class="promise"><div class="wrap">
-<h2>Our promise to you.</h2>
-<p class="sub">We’re a young studio, and we’d rather win your trust than your lock-in.</p>
-<div class="pg">
-<div><h3>You own everything</h3><p>Ad accounts, analytics and content stay in your name from day one.</p></div>
-<div><h3>Month to month</h3><p>No long contracts. If we’re not earning our fee, you can leave.</p></div>
-<div><h3>Numbers you can read</h3><p>A short report every month on leads, cost and what we’ll do next.</p></div>
-<div><h3>Direct access</h3><p>You talk to the founder’s team, not a ticket queue.</p></div>
+<div class="band"><div class="wrap"><h2>Looking for exclusive services?</h2><a class="btn" href="#contact">Get my free plan</a></div></div>
+
+<section class="about"><div class="wrap"><div class="tm">
+<div class="avatar" aria-hidden="true">NB</div>
+<div>
+<h2>Meet the founder.</h2>
+<p class="sub" style="margin-bottom:0"><b>Nikhil Bhagwat</b> founded DigiSonic Media in 2026 on one idea: most brands don’t have a visibility problem, they have a signal problem. He works directly with every client to find it and fix it.</p>
+</div></div></div></section>
+
+<div class="mq t" aria-hidden="true"><div><span>Google Ads</span><span>Meta Ads</span><span>Analytics 4</span><span>Search Console</span><span>WordPress</span><span>Shopify</span><span>Mailchimp</span><span>Canva</span><span>Google Ads</span><span>Meta Ads</span><span>Analytics 4</span><span>Search Console</span><span>WordPress</span><span>Shopify</span><span>Mailchimp</span><span>Canva</span></div></div>
+
+<section id="insights"><div class="wrap">
+<h2>Insights.</h2>
+<p class="sub">Quick reads you can use today. Tap a card to open it.</p>
+<div class="cards">
+<button class="card" aria-expanded="false"><span class="tag">Local SEO</span><h3>5 quick wins for local search</h3><p>Small fixes that help nearby customers find you.</p><div class="more">Claim and complete your Google Business Profile, add real photos, ask happy customers for reviews, keep your name, address and phone identical everywhere, and make sure your site loads fast on mobile.</div></button>
+<button class="card" aria-expanded="false"><span class="tag">Reporting</span><h3>Why cost per lead beats likes</h3><p>Measure what pays the bills.</p><div class="more">Likes are nice, but leads and customers are what grow revenue. Track cost per lead and cost per customer, and judge every channel by them.</div></button>
+<button class="card" aria-expanded="false"><span class="tag">Strategy</span><h3>How to pick your first channel</h3><p>Start where your buyers already are.</p><div class="more">Ask where your last five customers found you. Start with that channel, get it working, and only then add a second.</div></button>
 </div></div></section>
 
-<section id="faq"><div class="wrap">
+<section id="faq" style="padding-top:0"><div class="wrap">
 <h2>Questions, answered.</h2><div style="height:30px"></div>
 <details><summary>How soon will I see results?</summary><p>Paid ads can bring leads within the first few weeks. SEO and content build over 3 to 6 months. We set expectations for each channel in your plan.</p></details>
-<details><summary>What budget do I need?</summary><p>It depends on your goals. Use the calculator above, then we’ll refine it on your free call.</p></details>
+<details><summary>What budget do I need?</summary><p>It depends on your goals. We’ll recommend a starting budget on your free call, based on your goals and market.</p></details>
 <details><summary>Do you work with small businesses?</summary><p>Yes. Our playbooks are built so a small team can start with one channel and add more as it grows.</p></details>
 <details><summary>What happens after I send the form?</summary><p>We reply by email within one working day to book your free strategy call.</p></details>
 </div></section>
 
-<section class="about" id="about"><div class="wrap"><div class="grid">
-<div class="avatar" aria-hidden="true">NB</div>
+<section id="contact" style="padding-top:0"><div class="wrap"><div class="cwrap">
 <div>
-<h2>Built by Nikhil Bhagwat.</h2>
-<p class="sub" style="margin-bottom:0">Nikhil founded DigiSonic Media in 2026 on one idea: most brands don’t have a visibility problem, they have a signal problem. We cut the noise, pick the channels that matter and report in plain numbers.</p>
-<div class="facts"><div><b data-n="2026">2026</b>Year founded</div><div><b data-n="5">0</b>Core channels</div><div><b data-n="30">0</b>Days to launch</div></div>
-</div></div></div></section>
-
-<section id="contact"><div class="wrap"><div class="cwrap">
-<div>
-<h2>Let’s make some noise.</h2>
+<h2>Send us a message.</h2>
 <p class="sub">Tell us what you want to grow. You’ll get a free growth plan, no strings attached.</p>
 <ul class="next"><li><b>1. We read your message</b><br>and look at your current online presence.</li><li><b>2. We reply within one working day</b><br>to book a 30-minute call.</li><li><b>3. You get a one-page plan</b><br>to use with us or on your own.</li></ul>
 </div>
@@ -222,7 +317,14 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 </form>
 </div></div></section>
 
-<footer><div class="wrap">© 2026 DigiSonic Media. Founded by Nikhil Bhagwat.</div></footer>
+<footer class="ft"><div class="wrap">
+<div class="g">
+<div><a class="logo" href="#top" style="margin-bottom:14px"><i aria-hidden="true"><b></b><b></b><b></b></i>DigiSonic</a><p>Digital marketing that gets your business heard. Founded by Nikhil Bhagwat in 2026.</p></div>
+<div><h3>Explore</h3><a href="#services">Services</a><a href="#playbooks">Playbooks</a><a href="#insights">Insights</a><a href="#faq">FAQ</a><a id="mail" href="#">Email us</a></div>
+<div><h3>Subscribe to our newsletter</h3><p>Growth tips in your inbox. No spam.</p><form class="nl" id="nlf" novalidate><input type="email" id="nl" placeholder="Your email" aria-label="Newsletter email"><button class="btn" type="submit">Join</button></form><div class="err" id="nle"></div></div>
+</div>
+<div class="cp">© 2026 DigiSonic Media. All rights reserved.</div>
+</div></footer>
 <div id="sticky"><span>Ready to grow?</span><a class="btn" href="#contact">Get free plan</a></div>
 <div id="toast" role="status"></div>
 
@@ -251,17 +353,7 @@ panel.querySelector('[data-svc]').onclick=()=>{const o=[...$('#svc').options].fi
 requestAnimationFrame(()=>requestAnimationFrame(()=>panel.querySelectorAll('.bars div').forEach(d=>d.style.height=d.dataset.h+'%')))}
 show(0);
 
-const fmt=n=>'₹'+Math.round(n).toLocaleString('en-IN');
-const rates={SEO:[260,.9],Social:[180,.7],'Paid ads':[400,1],Content:[220,.8],Branding:[150,.6]};
-S.forEach(s=>{const o=document.createElement('option');o.textContent=s.n;$('#ch').append(o)});
-function calc(){const b=+$('#budget').value,v=+$('#val').value,[cpl,q]=rates[$('#ch').value];
-const leads=Math.round(b/cpl),cust=Math.max(1,Math.round(leads/6*q));
-$('#bv').textContent=fmt(b);$('#vv').textContent=fmt(v);
-tween($('#leads'),leads);tween($('#cust'),cust);$('#roix').textContent='₹'+(cust*v/b).toFixed(1)}
-function tween(el,to){const from=+el.dataset.v||0;el.dataset.v=to;const t0=performance.now();
-(function f(t){const p=Math.min(1,(t-t0)/500);el.textContent=Math.round(from+(to-from)*p).toLocaleString('en-IN');if(p<1)requestAnimationFrame(f)})(t0)}
-['budget','ch','val'].forEach(id=>$('#'+id).addEventListener('input',calc));calc();
-$('#roicta').onclick=()=>{$('#msg').value=`I'd like a plan for ${$('#ch').value} with a budget of about ${fmt($('#budget').value)} per month.`};
+
 
 const P=[
 {g:'Get found',t:'Local search sprint',p:'Fix your listings, reviews and site speed in 30 days.',m:'We start with a free audit, then rank the 10 fixes that move enquiries the most.'},
@@ -302,21 +394,87 @@ toast('Request sent. We’ll reply within one working day.');e.target.reset();
 btn.disabled=false;btn.textContent='Send my request'});
 
 const root=document.documentElement;
-$('#theme').onclick=()=>{const dark=getComputedStyle(root).getPropertyValue('--bg').trim()==='#0E0D2B';root.dataset.theme=dark?'light':'dark'};
+$('#theme').onclick=()=>{const dark=getComputedStyle(root).getPropertyValue('--bg').trim()==='#16161D';root.dataset.theme=dark?'light':'dark'};
 
 const cv=$('#wave'),cx=cv.getContext('2d');let W,H,mx=.5,my=.5,lvl=4,t=0;
 const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
 function size(){const r=cv.getBoundingClientRect(),d=devicePixelRatio||1;W=cv.width=r.width*d;H=cv.height=r.height*d}
 addEventListener('resize',size);size();
 cv.parentElement.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();mx=(e.clientX-r.left)/r.width;my=(e.clientY-r.top)/r.height});
-$('#freq').addEventListener('input',e=>{lvl=+e.target.value;$('#fv').textContent='Reach level '+lvl});
+
 function draw(){t+=.02;cx.clearRect(0,0,W,H);
-for(let k=0;k<5;k++){cx.beginPath();cx.lineWidth=(2+k)*(W/1200);cx.strokeStyle=k%2?'rgba(255,77,141,'+(.25+k*.1)+')':'rgba(255,255,255,'+(.15+k*.07)+')';
+for(let k=0;k<5;k++){cx.beginPath();cx.lineWidth=(2+k)*(W/1200);cx.strokeStyle=k%2?'rgba(255,90,60,'+(.25+k*.1)+')':'rgba(22,22,29,'+(.12+k*.06)+')';
 for(let x=0;x<=W;x+=6){const nx=x/W,env=Math.exp(-Math.pow((nx-mx)*3,2)),
 y=H*(.8+(my-.5)*.2)+Math.sin(nx*(4+lvl*1.6)+t*(1+k*.3)+k)*H*(.03+.012*lvl)*(.4+env*1.6)*(1-k*.1);
 x?cx.lineTo(x,y):cx.moveTo(x,y)}cx.stroke()}
 if(!reduce)requestAnimationFrame(draw)}
-draw();if(reduce){$('#freq').addEventListener('input',draw);cv.parentElement.addEventListener('pointermove',draw)}
+draw();if(reduce){cv.parentElement.addEventListener('pointermove',draw)}
+
+/* interactions */
+const words=['the next level','new heights','the top of Google','your full potential'];let wi=0;
+setInterval(()=>{const r=$('#rot');r.classList.add('sw');setTimeout(()=>{wi=(wi+1)%words.length;r.textContent=words[wi];r.classList.remove('sw')},260)},2600);
+addEventListener('scroll',()=>{const d=document.documentElement;$('#pg').style.width=(scrollY/(d.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+const GO=[
+{t:'Get more leads fast',r:'Paid ads and a landing page that converts',w:'Ads can bring enquiries within weeks, and we tune spend weekly toward the lowest cost per lead.',s:'Paid ads'},
+{t:'Show up on Google',r:'SEO and content that compounds',w:'Rankings take 3 to 6 months to build, but they keep bringing visitors without paying for every click.',s:'SEO'},
+{t:'Grow my audience',r:'Social media and short-form video',w:'Consistent, platform-native content builds an audience that remembers and recommends you.',s:'Social media'},
+{t:'Look more professional',r:'Branding and a sharper website',w:'A clear identity and message make every other channel work harder.',s:'Branding and web design'}];
+GO.forEach((g,i)=>{const b=document.createElement('button');b.className='tab';b.textContent=g.t;b.onclick=()=>{[...$('#goals').children].forEach((x,j)=>x.setAttribute('aria-selected',j===i));
+$('#gres').innerHTML=`<div><span class="tag">Where we’d start</span><h3>${g.r}</h3><p>${g.w}</p><a class="btn" href="#contact" id="gcta">Get this plan</a></div>`;
+$('#gcta').onclick=()=>{$('#svc').value=g.s;$('#msg').value='My main goal: '+g.t.toLowerCase()+'. '}};$('#goals').append(b)});
+$('#goals').children[0].click();
+const rio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target)}}),{threshold:.15});
+function rv(){document.querySelectorAll('.vs>div,.steps div,.pg div,.card,details,.panel').forEach((el,i)=>{if(el.classList.contains('rv'))return;el.classList.add('rv');el.style.transitionDelay=(i%4)*70+'ms';rio.observe(el)})}
+rv();new MutationObserver(rv).observe(document.body,{childList:true,subtree:true});
+if(matchMedia('(hover:hover)').matches&&!reduce)document.addEventListener('pointermove',e=>{const c=e.target.closest('.card,.vs>div,.pg div');if(!c)return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(700px) rotateX(${-y*6}deg) rotateY(${x*6}deg)`;c.onpointerleave=()=>c.style.transform=''});
+
+/* slider, bars, newsletter */
+const sl=[...document.querySelectorAll('.sl')],dots=[];let si=0,hov=false;
+function go(i){si=(i+sl.length)%sl.length;sl.forEach((s,k)=>s.classList.toggle('on',k===si));dots.forEach((d,k)=>d.setAttribute('aria-current',k===si))}
+sl.forEach((_,i)=>{const d=document.createElement('button');d.setAttribute('aria-label','Slide '+(i+1));d.onclick=()=>go(i);dots.push(d);$('#dots').append(d)});
+$('#prev').onclick=()=>go(si-1);$('#next').onclick=()=>go(si+1);go(0);
+$('.hero').addEventListener('pointerenter',()=>hov=true);$('.hero').addEventListener('pointerleave',()=>hov=false);
+if(!reduce)setInterval(()=>{if(!hov)go(si+1)},7000);
+const bo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('i[data-w]').forEach(i=>i.style.width=i.dataset.w+'%');bo.unobserve(e.target)}}),{threshold:.3});
+bo.observe($('#skills'));
+$('#mail').href='mailto:'+EMAIL;
+$('#nlf').addEventListener('submit',async e=>{e.preventDefault();const m=$('#nl').value.trim();
+$('#nle').textContent=ok(m)?'':'Enter a valid email.';if(!ok(m))return;
+const mt=()=>{location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Newsletter signup')+'&body='+encodeURIComponent('Please add '+m+' to the newsletter.')};
+try{await emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,{from_name:'Newsletter subscriber',from_email:m,message:'Please add '+m+' to the newsletter.',subject:'Newsletter signup',reply_to:m,to_email:EMAIL},{publicKey:EMAILJS_PUBLIC_KEY});toast('You’re on the list. Thanks for joining.');e.target.reset()}catch(err){mt()}});
+
+/* cursor magic */
+const fine=matchMedia('(hover:hover)').matches;
+const fx=$('#fx'),fc=fx.getContext('2d'),ring=$('#ring'),PA=[],COL=['#FFD62E','#FF5A3C','#3DDC97','#8FD3FF'];let fw,fh,px=-99,py=-99,rx=-99,ry=-99;
+function fs(){const d=devicePixelRatio||1;fw=fx.width=innerWidth*d;fh=fx.height=innerHeight*d;fc.setTransform(d,0,0,d,0,0)}
+addEventListener('resize',fs);fs();
+function spawn(x,y,n,sp){if(reduce)return;for(let i=0;i<n;i++){const a=Math.random()*6.283,v=(.5+Math.random())*sp;PA.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v-.5,l:1,s:4+Math.random()*7,r:Math.random()*3,c:COL[i%4]})}if(PA.length>220)PA.splice(0,PA.length-220)}
+(function loop(){fc.clearRect(0,0,innerWidth,innerHeight);
+for(let i=PA.length-1;i>=0;i--){const p=PA[i];p.x+=p.vx;p.y+=p.vy;p.vy+=.06;p.l-=.022;p.r+=.1;if(p.l<=0){PA.splice(i,1);continue}
+fc.save();fc.globalAlpha=p.l;fc.translate(p.x,p.y);fc.rotate(p.r);fc.fillStyle=p.c;fc.strokeStyle='#16161D';fc.lineWidth=1.5;const s=p.s*p.l+1;fc.beginPath();fc.moveTo(0,-s);fc.lineTo(s*.4,-s*.4);fc.lineTo(s,0);fc.lineTo(s*.4,s*.4);fc.lineTo(0,s);fc.lineTo(-s*.4,s*.4);fc.lineTo(-s,0);fc.lineTo(-s*.4,-s*.4);fc.closePath();fc.fill();fc.stroke();fc.restore()}
+rx+=(px-rx)*.18;ry+=(py-ry)*.18;ring.style.transform=`translate(${rx}px,${ry}px)`;requestAnimationFrame(loop)})();
+let lt=0;
+addEventListener('pointermove',e=>{px=e.clientX;py=e.clientY;ring.style.opacity=1;const n=performance.now();if(n-lt>45&&e.pointerType==='mouse'){lt=n;spawn(px,py,1,1.6)}
+const t=e.target.closest&&e.target.closest('a,button,summary,.card,select,input,textarea');ring.classList.toggle('on',!!t&&!t.closest('#pop'));
+const c=e.target.closest&&e.target.closest('.card,.feat>div');if(c){const r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')}
+if(fine&&!reduce)mag(e)});
+document.addEventListener('pointerleave',()=>ring.style.opacity=0);
+addEventListener('pointerdown',e=>{spawn(e.clientX,e.clientY,22,4.5);const b=e.target.closest&&e.target.closest('.btn,.tab');if(b){const r=b.getBoundingClientRect(),s=Math.max(r.width,r.height)*2,d=document.createElement('span');d.className='rp';d.style.cssText=`width:${s}px;height:${s}px;left:${e.clientX-r.left-s/2}px;top:${e.clientY-r.top-s/2}px`;b.append(d);setTimeout(()=>d.remove(),650)}});
+const MG=()=>document.querySelectorAll('.btn,.tg,.dots button,.ctl button');
+function mag(e){MG().forEach(el=>{const r=el.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2,dx=e.clientX-cx,dy=e.clientY-cy,d=Math.hypot(dx,dy),R=Math.max(r.width,r.height)*.9;
+el.style.transform=d<R?`translate(${dx*.22}px,${dy*.22}px)`:'';})}
+/* pop-up */
+const pop=$('#pop');let shown=false;try{shown=sessionStorage.getItem('dsPop')==='1'}catch(e){}
+function openPop(){if(shown)return;shown=true;try{sessionStorage.setItem('dsPop','1')}catch(e){}pop.classList.add('on');$('#pe').focus();spawn(innerWidth/2,innerHeight/2,40,6)}
+function closePop(){pop.classList.remove('on')}
+setTimeout(openPop,30000);
+document.addEventListener('mouseleave',e=>{if(e.clientY<=0&&fine)openPop()});
+$('#px').onclick=closePop;pop.addEventListener('pointerdown',e=>{if(e.target===pop)closePop()});
+addEventListener('keydown',e=>{if(e.key==='Escape')closePop()});
+$('#pf').addEventListener('submit',async e=>{e.preventDefault();const m=$('#pe').value.trim();$('#pee').textContent=ok(m)?'':'Enter a valid email.';if(!ok(m))return;
+const body='Please send the free growth plan to '+m+'.';
+try{await emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,{from_name:'Popup lead',from_email:m,message:body,subject:'Free growth plan request (popup)',reply_to:m,to_email:EMAIL},{publicKey:EMAILJS_PUBLIC_KEY});toast('Done! We’ll email your plan within one working day.');closePop();e.target.reset();spawn(innerWidth/2,innerHeight/2,50,7)}
+catch(err){location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Free growth plan request')+'&body='+encodeURIComponent(body)}});
 </script>
 </body>
 </html>
