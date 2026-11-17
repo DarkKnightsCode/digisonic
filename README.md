@@ -9,4 +9,4 @@ Static site (no build step).
 ## EmailJS
 Credentials are at the top of the <script> block in index.html.
 In EmailJS, add your Vercel domain under Account > Security if you restrict domains.
-Template variables: {{from_name}}, {{from_email}}, {{message}}, {{subject}}.
+Template variables: {{name}}, {{email}}, {{time}}, {{message}}, {{title}}.

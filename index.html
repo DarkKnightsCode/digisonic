@@ -184,7 +184,7 @@ footer{border-top:3px solid var(--bd);padding:30px 0;color:var(--muted);font-siz
 <canvas id="fx" aria-hidden="true"></canvas><div id="ring" aria-hidden="true"></div>
 <div id="pop" role="dialog" aria-modal="true" aria-labelledby="pt"><div class="m"><button class="x" id="px" aria-label="Close">✕</button>
 <h3 id="pt">Before you go: get your free growth plan</h3><p>Leave your email and we’ll send a one-page plan for your business.</p>
-<form id="pf" novalidate><input type="email" id="pe" placeholder="Your email" aria-label="Your email"><div class="err" id="pee"></div><button class="btn" type="submit" style="background:#fff;margin-top:6px">Send me the plan</button></form></div></div>
+<form id="pf" novalidate autocomplete="on" method="post" action="#" name="plan"><input type="email" id="pe" name="email" placeholder="Your email" aria-label="Your email" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" required><div class="err" id="pee"></div><button class="btn" type="submit" style="background:#fff;margin-top:6px">Send me the plan</button></form></div></div>
 <div id="pg"></div>
 <nav><div class="wrap">
 <a class="logo" href="#top" aria-label="DigiSonic Media home"><i aria-hidden="true"><b></b><b></b><b></b></i>DigiSonic</a>
@@ -308,11 +308,11 @@ footer{border-top:3px solid var(--bd);padding:30px 0;color:var(--muted);font-siz
 <p class="sub">Tell us what you want to grow. You’ll get a free growth plan, no strings attached.</p>
 <ul class="next"><li><b>1. We read your message</b><br>and look at your current online presence.</li><li><b>2. We reply within one working day</b><br>to book a 30-minute call.</li><li><b>3. You get a one-page plan</b><br>to use with us or on your own.</li></ul>
 </div>
-<form id="form" novalidate>
-<div><input type="text" id="name" placeholder="Your name" aria-label="Your name" autocomplete="name"><div class="err" id="e1"></div></div>
-<div><input type="email" id="email" placeholder="Work email" aria-label="Work email" autocomplete="email"><div class="err" id="e2"></div></div>
-<select id="svc" aria-label="Service you need"><option>SEO</option><option>Social media</option><option>Paid ads</option><option>Content</option><option>Branding and web design</option><option>Not sure yet</option></select>
-<div><textarea id="msg" rows="4" placeholder="What do you want to grow?" aria-label="Project details"></textarea><div class="err" id="e3"></div></div>
+<form id="form" novalidate autocomplete="on" method="post" action="#" name="contact">
+<div><input type="text" id="name" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" autocapitalize="words" required><div class="err" id="e1"></div></div>
+<div><input type="email" id="email" name="email" placeholder="Work email" aria-label="Work email" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" required><div class="err" id="e2"></div></div>
+<select id="svc" name="service" aria-label="Service you need" autocomplete="off"><option>SEO</option><option>Social media</option><option>Paid ads</option><option>Content</option><option>Branding and web design</option><option>Not sure yet</option></select>
+<div><textarea id="msg" name="message" autocomplete="off" rows="4" placeholder="What do you want to grow?" aria-label="Project details"></textarea><div class="err" id="e3"></div></div>
 <button class="btn" type="submit" id="send" style="justify-self:start">Send my request</button>
 </form>
 </div></div></section>
@@ -321,7 +321,7 @@ footer{border-top:3px solid var(--bd);padding:30px 0;color:var(--muted);font-siz
 <div class="g">
 <div><a class="logo" href="#top" style="margin-bottom:14px"><i aria-hidden="true"><b></b><b></b><b></b></i>DigiSonic</a><p>Digital marketing that gets your business heard. Founded by Nikhil Bhagwat in 2026.</p></div>
 <div><h3>Explore</h3><a href="#services">Services</a><a href="#playbooks">Playbooks</a><a href="#insights">Insights</a><a href="#faq">FAQ</a><a id="mail" href="#">Email us</a></div>
-<div><h3>Subscribe to our newsletter</h3><p>Growth tips in your inbox. No spam.</p><form class="nl" id="nlf" novalidate><input type="email" id="nl" placeholder="Your email" aria-label="Newsletter email"><button class="btn" type="submit">Join</button></form><div class="err" id="nle"></div></div>
+<div><h3>Subscribe to our newsletter</h3><p>Growth tips in your inbox. No spam.</p><form class="nl" id="nlf" novalidate autocomplete="on" method="post" action="#" name="newsletter"><input type="email" id="nl" name="email" placeholder="Your email" aria-label="Newsletter email" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" required><button class="btn" type="submit">Join</button></form><div class="err" id="nle"></div></div>
 </div>
 <div class="cp">© 2026 DigiSonic Media. All rights reserved.</div>
 </div></footer>
@@ -331,12 +331,13 @@ footer{border-top:3px solid var(--bd);padding:30px 0;color:var(--muted);font-siz
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
 <script>
 /* Contact form via EmailJS (https://dashboard.emailjs.com).
-   Template variables: {{from_name}}, {{from_email}}, {{message}}, {{subject}}.
+   Template variables: {{name}}, {{email}}, {{time}}, {{message}}, {{title}}.
    While any value is empty, the form opens the visitor's email app instead. */
-var EMAILJS_SERVICE_ID = "service_7h2n32i";
-var EMAILJS_TEMPLATE_ID = "template_gq3i7ln";
-var EMAILJS_PUBLIC_KEY = "Nz4-ACWbM1bsHKkFQ";
-var EMAIL = "shubhambhagwat453@gmail.com";
+var EMAILJS_SERVICE_ID = "service_wjcf41c";
+var EMAILJS_TEMPLATE_ID = "template_7fhmcv8";
+var EMAILJS_PUBLIC_KEY = "flQZ7itYTWjIDdm8L";
+var EMAIL = "digisonicmediaagency@gmail.com";
+var T = function(){return new Date().toLocaleString("en-IN",{dateStyle:"medium",timeStyle:"short"})};
 
 const $=s=>document.querySelector(s);
 const S=[
@@ -388,7 +389,7 @@ const mailto=()=>{location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent(s
 if(!(EMAILJS_SERVICE_ID&&EMAILJS_TEMPLATE_ID&&EMAILJS_PUBLIC_KEY&&window.emailjs)){mailto();return}
 const btn=$('#send');btn.disabled=true;btn.textContent='Sending…';
 try{
-await emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,{from_name:n,from_email:m,message:x,subject:subject,reply_to:m,to_email:EMAIL},{publicKey:EMAILJS_PUBLIC_KEY});
+await emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,{name:n,email:m,time:T(),title:sv,message:x,subject:subject,reply_to:m,to_email:EMAIL},{publicKey:EMAILJS_PUBLIC_KEY});
 toast('Request sent. We’ll reply within one working day.');e.target.reset();
 }catch(err){console.error(err);toast('We couldn’t send that. Opening your email app instead.');setTimeout(mailto,1200)}
 btn.disabled=false;btn.textContent='Send my request'});
@@ -441,7 +442,7 @@ $('#mail').href='mailto:'+EMAIL;
 $('#nlf').addEventListener('submit',async e=>{e.preventDefault();const m=$('#nl').value.trim();
 $('#nle').textContent=ok(m)?'':'Enter a valid email.';if(!ok(m))return;
 const mt=()=>{location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Newsletter signup')+'&body='+encodeURIComponent('Please add '+m+' to the newsletter.')};
-try{await emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,{from_name:'Newsletter subscriber',from_email:m,message:'Please add '+m+' to the newsletter.',subject:'Newsletter signup',reply_to:m,to_email:EMAIL},{publicKey:EMAILJS_PUBLIC_KEY});toast('You’re on the list. Thanks for joining.');e.target.reset()}catch(err){mt()}});
+try{await emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,{name:'Newsletter subscriber',email:m,time:T(),title:'Newsletter signup',message:'Please add '+m+' to the newsletter.',subject:'Newsletter signup',reply_to:m,to_email:EMAIL},{publicKey:EMAILJS_PUBLIC_KEY});toast('You’re on the list. Thanks for joining.');e.target.reset()}catch(err){mt()}});
 
 /* cursor magic */
 const fine=matchMedia('(hover:hover)').matches;
@@ -473,7 +474,7 @@ $('#px').onclick=closePop;pop.addEventListener('pointerdown',e=>{if(e.target===p
 addEventListener('keydown',e=>{if(e.key==='Escape')closePop()});
 $('#pf').addEventListener('submit',async e=>{e.preventDefault();const m=$('#pe').value.trim();$('#pee').textContent=ok(m)?'':'Enter a valid email.';if(!ok(m))return;
 const body='Please send the free growth plan to '+m+'.';
-try{await emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,{from_name:'Popup lead',from_email:m,message:body,subject:'Free growth plan request (popup)',reply_to:m,to_email:EMAIL},{publicKey:EMAILJS_PUBLIC_KEY});toast('Done! We’ll email your plan within one working day.');closePop();e.target.reset();spawn(innerWidth/2,innerHeight/2,50,7)}
+try{await emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,{name:'Popup lead',email:m,time:T(),title:'Free growth plan request',message:body,subject:'Free growth plan request (popup)',reply_to:m,to_email:EMAIL},{publicKey:EMAILJS_PUBLIC_KEY});toast('Done! We’ll email your plan within one working day.');closePop();e.target.reset();spawn(innerWidth/2,innerHeight/2,50,7)}
 catch(err){location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Free growth plan request')+'&body='+encodeURIComponent(body)}});
 </script>
 </body>
